@@ -27,8 +27,13 @@ class AppController extends Controller {
             'page' => 1,
             'limit' => 10,
             'maxLimit' => 100,
+            'fields' => [
+                'id',
+                'name',
+                'description'
+            ],
             'sortWhitelist' => [
-                'id', 'name', 'description'
+                'id', 'name'
             ]
         ]
     ];
