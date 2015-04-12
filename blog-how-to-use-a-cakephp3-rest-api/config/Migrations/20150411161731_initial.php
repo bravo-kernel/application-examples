@@ -33,9 +33,9 @@ class Initial extends AbstractMigration
             "INSERT INTO `cocktails` VALUES " .
             "('1', 'Cosmopolitan', 'Vodka based', '2015-04-10 15:56:23', null)," .
             "('2', 'Margarita', 'Tequila based', '2015-04-10 15:59:39', null)," .
-            "('3', 'Caipirinha', 'Rum based', '2015-04-11 09:33:37', null)," .
+            "('3', 'Mojito', 'Rum based', '2015-04-11 09:52:01', null)," .
             "('4', 'Cuba Libre', 'Rum based', '2015-04-11 09:52:01', null)," .
-            "('5', 'Mojito', 'Rum based', '2015-04-11 09:52:01', null)," .
+            "('5', 'Caipirinha', 'Rum based', '2015-04-11 09:33:37', null)," .
             "('6', 'Tequila Sunrise', 'Tequila based', '2015-04-11 09:52:02', null)," .
             "('7', 'Bloody Mary', 'Vodka based', '2015-04-11 09:52:02', null)," .
             "('8', 'Black Velvet', 'Beer based', '2015-04-11 09:52:02', null)," .
