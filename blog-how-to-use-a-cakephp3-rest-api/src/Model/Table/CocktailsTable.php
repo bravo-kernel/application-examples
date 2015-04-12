@@ -1,16 +1,16 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Recipe;
+use App\Model\Entity\Cocktail;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Recipes Model
+ * Cocktails Model
  */
-class RecipesTable extends Table
+class CocktailsTable extends Table
 {
 
     /**
@@ -21,7 +21,7 @@ class RecipesTable extends Table
      */
     public function initialize(array $config)
     {
-        $this->table('recipes');
+        $this->table('cocktails');
         $this->displayField('name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');

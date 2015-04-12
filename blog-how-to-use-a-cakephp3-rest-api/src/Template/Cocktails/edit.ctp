@@ -3,17 +3,17 @@
     <ul class="side-nav">
         <li><?= $this->Form->postLink(
                 __('Delete'),
-                ['action' => 'delete', $recipe->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $recipe->id)]
+                ['action' => 'delete', $cocktail->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $cocktail->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List Recipes'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Cocktails'), ['action' => 'index']) ?></li>
     </ul>
 </div>
-<div class="recipes form large-10 medium-9 columns">
-    <?= $this->Form->create($recipe); ?>
+<div class="cocktails form large-10 medium-9 columns">
+    <?= $this->Form->create($cocktail); ?>
     <fieldset>
-        <legend><?= __('Edit Recipe') ?></legend>
+        <legend><?= __('Edit Cocktail') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('description');

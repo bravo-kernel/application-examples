@@ -1,10 +1,10 @@
 <div class="actions columns large-2 medium-3">
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Recipe'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Cocktail'), ['action' => 'add']) ?></li>
     </ul>
 </div>
-<div class="recipes index large-10 medium-9 columns">
+<div class="cocktails index large-10 medium-9 columns">
     <table cellpadding="0" cellspacing="0">
     <thead>
         <tr>
@@ -17,17 +17,17 @@
         </tr>
     </thead>
     <tbody>
-    <?php foreach ($recipes as $recipe): ?>
+    <?php foreach ($cocktails as $cocktail): ?>
         <tr>
-            <td><?= $this->Number->format($recipe->id) ?></td>
-            <td><?= h($recipe->name) ?></td>
-            <td><?= h($recipe->description) ?></td>
-            <td><?= h($recipe->created) ?></td>
-            <td><?= h($recipe->modified) ?></td>
+            <td><?= $this->Number->format($cocktail->id) ?></td>
+            <td><?= h($cocktail->name) ?></td>
+            <td><?= h($cocktail->description) ?></td>
+            <td><?= h($cocktail->created) ?></td>
+            <td><?= h($cocktail->modified) ?></td>
             <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $recipe->id]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $recipe->id]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $recipe->id], ['confirm' => __('Are you sure you want to delete # {0}?', $recipe->id)]) ?>
+                <?= $this->Html->link(__('View'), ['action' => 'view', $cocktail->id]) ?>
+                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $cocktail->id]) ?>
+                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $cocktail->id], ['confirm' => __('Are you sure you want to delete # {0}?', $cocktail->id)]) ?>
             </td>
         </tr>
 

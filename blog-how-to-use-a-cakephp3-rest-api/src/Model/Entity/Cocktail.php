@@ -4,9 +4,9 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Recipe Entity.
+ * Cocktail Entity.
  */
-class Recipe extends Entity
+class Cocktail extends Entity
 {
 
     /**
