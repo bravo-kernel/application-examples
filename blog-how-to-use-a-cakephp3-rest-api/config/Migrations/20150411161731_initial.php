@@ -5,7 +5,7 @@ class Initial extends AbstractMigration
 {
     public function up()
     {
-        $table = $this->table('recipes');
+        $table = $this->table('cocktails');
         $table
             ->addColumn('name', 'string', [
                 'default' => null,
@@ -30,7 +30,7 @@ class Initial extends AbstractMigration
             ->create();
 
         $this->execute(
-            "INSERT INTO `recipes` VALUES " .
+            "INSERT INTO `cocktails` VALUES " .
             "('1', 'Cosmopolitan', 'Vodka based', '2015-04-10 15:56:23', null)," .
             "('2', 'Margarita', 'Tequila based', '2015-04-10 15:59:39', null)," .
             "('3', 'Caipirinha', 'Rum based', '2015-04-11 09:33:37', null)," .
@@ -47,6 +47,6 @@ class Initial extends AbstractMigration
 
     public function down()
     {
-        $this->dropTable('recipes');
+        $this->dropTable('cocktails');
     }
 }
