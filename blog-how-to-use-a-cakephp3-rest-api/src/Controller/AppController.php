@@ -25,10 +25,10 @@ class AppController extends Controller {
         ],
         'Paginator' => [
             'page' => 1,
-            'limit' => 5,
+            'limit' => 10,
             'maxLimit' => 100,
             'sortWhitelist' => [
-                'id', 'name', 'description'
+                'id', 'name'
             ]
         ]
     ];

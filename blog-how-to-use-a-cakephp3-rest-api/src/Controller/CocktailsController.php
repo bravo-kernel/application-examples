@@ -3,7 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
-class RecipesController extends AppController
+class CocktailsController extends AppController
 {
 
 }
