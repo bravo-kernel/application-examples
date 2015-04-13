@@ -7,13 +7,10 @@ class CocktailsController extends AppController
 {
     public $paginate = [
         'page' => 1,
-        'limit' => 10,
-        'maxLimit' => 100,
-        'fields' => [
-            'id', 'name', 'description'
-        ],
+        'limit' => 5,
+        'maxLimit' => 15,
         'sortWhitelist' => [
-            'id', 'name', 'description'
+            'id', 'name'
         ]
     ];
 }
