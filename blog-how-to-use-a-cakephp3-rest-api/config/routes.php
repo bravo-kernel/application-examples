@@ -45,7 +45,7 @@ Router::extensions(['json', 'xml']);
 
 Router::scope('/', function ($routes) {
 
-	$routes->resources('Cocktails');
+    $routes->resources('Cocktails');
 
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
