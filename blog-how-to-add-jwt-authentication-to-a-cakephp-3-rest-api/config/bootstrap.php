@@ -195,3 +195,4 @@ DispatcherFactory::add('Routing');
 DispatcherFactory::add('ControllerFactory');
 
 Plugin::load('Crud');
+Plugin::load('Admad/JwtAuth', []);
