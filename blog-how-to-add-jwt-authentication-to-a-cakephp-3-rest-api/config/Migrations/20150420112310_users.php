@@ -10,22 +10,26 @@ class Users extends AbstractMigration
             ->addColumn('username', 'string', [
                 'default' => null,
                 'limit' => 50,
-                'null' => false,
+                'null' => false
             ])
             ->addColumn('password', 'string', [
                 'default' => null,
                 'limit' => 255,
-                'null' => false,
+                'null' => false
+            ])
+            ->addColumn('active', 'boolean', [
+                'default' => 0,
+                'null' => false
             ])
             ->addColumn('created', 'datetime', [
                 'default' => 'CURRENT_TIMESTAMP',
                 'limit' => null,
-                'null' => false,
+                'null' => false
             ])
             ->addColumn('modified', 'datetime', [
                 'default' => null,
                 'limit' => null,
-                'null' => true,
+                'null' => true
             ])
             ->create();
     }

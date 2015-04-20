@@ -26,5 +26,9 @@
             <h6 class="subheader"><?= __('Modified') ?></h6>
             <p><?= h($user->modified) ?></p>
         </div>
+        <div class="large-2 columns booleans end">
+            <h6 class="subheader"><?= __('Active') ?></h6>
+            <p><?= $user->active ? __('Yes') : __('No'); ?></p>
+        </div>
     </div>
 </div>
