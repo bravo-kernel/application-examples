@@ -44,6 +44,7 @@ Router::defaultRouteClass('Route');
 Router::prefix('api', function ($routes) {
     $routes->extensions(['json', 'xml']);
     $routes->resources('Cocktails');
+    $routes->resources('Users');
 });
 
 Router::scope('/', function ($routes) {
