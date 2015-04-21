@@ -1,13 +1,10 @@
 <?php
 namespace App\Controller\Api;
 
-use App\Controller\AppController;
+use App\Controller\Api\AppController;
 use Cake\Event\Event;
-use Cake\Network\Exception\NotImplementedException;
 use Cake\Network\Exception\UnauthorizedException;
-use Cake\Exception\Exception;
 use Cake\Utility\Security;
-use Crud\Crud;
 
 class UsersController extends AppController
 {
@@ -15,7 +12,7 @@ class UsersController extends AppController
     public function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);
-        //$this->Auth->allow('add', 'token');
+        $this->Auth->allow(['add', 'token']);
     }
 
     /**
@@ -51,19 +48,6 @@ class UsersController extends AppController
             ]);
             return;
         }
-        throw new UnauthorizedException();
+        throw new UnauthorizedException('Invalid username or password');
     }
-
-    public function woot()
-    {
-        $this->set([
-            'success' => true,
-            'data' => [
-                'woot' => 'wootwoot'
-            ],
-            '_serialize' => ['success', 'data']
-        ]);
-        return;
-    }
-
 }
