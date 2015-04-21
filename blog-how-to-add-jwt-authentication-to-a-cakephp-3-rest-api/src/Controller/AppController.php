@@ -2,6 +2,9 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use Cake\Event\Event;
+use Cake\Network\Exception\ForbiddenException;
+use Cake\Network\Exception\UnauthorizedException;
 
 class AppController extends Controller {
 
@@ -22,6 +25,23 @@ class AppController extends Controller {
                 'Crud.ApiPagination',
                 'Crud.ApiQueryLog'
             ]
-        ]
+        ],
+        'Auth'
     ];
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->config('authenticate', [
+            'Basic',
+            'ADmad/JwtAuth.Jwt' => [
+                'parameter' => '_token',
+                'userModel' => 'Users',
+                'scope' => ['Users.active' => 1],
+                'fields' => [
+                    'id' => 'id'
+                ]
+            ]
+        ]);
+    }
+
 }
