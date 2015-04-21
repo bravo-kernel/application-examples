@@ -19,7 +19,7 @@ class Users extends AbstractMigration
             ])
             ->addColumn('active', 'boolean', [
                 'default' => 0,
-                'null' => false
+                'null' => true
             ])
             ->addColumn('created', 'datetime', [
                 'default' => 'CURRENT_TIMESTAMP',
