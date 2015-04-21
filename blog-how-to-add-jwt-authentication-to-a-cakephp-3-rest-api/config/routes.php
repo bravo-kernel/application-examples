@@ -45,6 +45,7 @@ Router::prefix('api', function ($routes) {
     $routes->extensions(['json', 'xml']);
     $routes->resources('Cocktails');
     $routes->resources('Users');
+    $routes->fallbacks('InflectedRoute');
 });
 
 Router::scope('/', function ($routes) {
