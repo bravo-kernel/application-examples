@@ -33,7 +33,7 @@ class UsersController extends AppController
     }
 
     /**
-     * Return JWT token if posted user credentials pass AuthComponent
+     * Return JWT token if posted user credentials pass FormAuthenticate
      */
     public function token()
     {
