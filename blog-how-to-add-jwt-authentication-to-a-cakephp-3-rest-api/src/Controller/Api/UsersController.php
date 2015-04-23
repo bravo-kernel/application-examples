@@ -24,7 +24,12 @@ class UsersController extends AppController
             if ($event->subject->created) {
                 $this->set('data', [
                     'id' => $event->subject->entity->id,
-                    'token' => $token = \JWT::encode(['id' => $event->subject->entity->id], Security::salt())
+                    'token' => $token = \JWT::encode(
+                        [
+                            'id' => $event->subject->entity->id,
+                            'exp' =>  time() + 604800
+                        ],
+                    Security::salt())
                 ]);
                 $this->Crud->action()->config('serialize.data', 'data');
             }
@@ -45,10 +50,13 @@ class UsersController extends AppController
         $this->set([
             'success' => true,
             'data' => [
-                'token' => $token = \JWT::encode(['id' => $user['id']], Security::salt())
+                'token' => $token = \JWT::encode([
+                    'id' => $user['id'],
+                    'exp' =>  time() + 604800
+                ],
+                Security::salt())
             ],
             '_serialize' => ['success', 'data']
         ]);
-        return;
     }
 }
