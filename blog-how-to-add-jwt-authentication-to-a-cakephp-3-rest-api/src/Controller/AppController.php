@@ -16,7 +16,8 @@ class AppController extends Controller {
                 'Crud.Edit',
                 'Crud.Delete'
             ]
-        ]
+        ],
+        'Flash'
     ];
 
 }
