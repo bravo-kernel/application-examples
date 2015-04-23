@@ -10,7 +10,8 @@
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
-        "friendsofcake/crud": "dev-cake3"
+        "friendsofcake/crud": "dev-cake3",
+        "admad/cakephp-jwt-auth": "1.0.x-dev"
     },
     "require-dev": {
         "psy/psysh": "@stable",
