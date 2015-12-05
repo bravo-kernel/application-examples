@@ -32,18 +32,21 @@ class AppController extends Controller
 
     public function beforeFilter(Event $event)
     {
-            $this->loadComponent('Auth', [
+        $this->loadComponent('Auth', [
+            'storage' => 'Memory',
             'authenticate' => [
                 'Form',
                 'ADmad/JwtAuth.Jwt' => [
-                    'parameter' => '_token',
+                    'parameter' => 'token',
                     'userModel' => 'Users',
                     'scope' => ['Users.active' => 1],
                     'fields' => [
-                        'id' => 'id'
+                        'username' => 'id'
                     ]
                 ]
-            ]
+            ],
+            'unauthorizedRedirect' => false,
+            'checkAuthIn' => 'Controller.initialize'
         ]);
     }
 
