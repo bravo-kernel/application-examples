@@ -10,9 +10,9 @@ use Firebase\JWT\JWT;
 class UsersController extends AppController
 {
 
-    public function beforeFilter(Event $event)
+    public function initialize()
     {
-        parent::beforeFilter($event);
+        parent::initialize();
         $this->Auth->allow(['add', 'token']);
     }
 
