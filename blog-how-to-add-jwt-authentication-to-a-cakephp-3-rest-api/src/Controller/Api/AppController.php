@@ -30,8 +30,10 @@ class AppController extends Controller
         ]
     ];
 
-    public function beforeFilter(Event $event)
+    public function initialize()
     {
+        parent::initialize();
+
         $this->loadComponent('Auth', [
             'storage' => 'Memory',
             'authenticate' => [
@@ -45,12 +47,12 @@ class AppController extends Controller
                     'fields' => [
                         'username' => 'id'
                     ],
-                    'queryDatasource' => true
+                    'queryDatasource' => true,
                 ]
             ],
             'unauthorizedRedirect' => false,
             'checkAuthIn' => 'Controller.initialize'
         ]);
     }
-
 }
+
