@@ -21,7 +21,7 @@ class Users extends AbstractMigration
                 'default' => 0,
                 'null' => true
             ])
-            ->addColumn('created', 'datetime', [
+            ->addColumn('created', 'timestamp', [
                 'default' => 'CURRENT_TIMESTAMP',
                 'limit' => null,
                 'null' => false
