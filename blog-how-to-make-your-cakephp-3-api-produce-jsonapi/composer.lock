@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "89a296f9a58218284e6b506bc83f307d",
+    "content-hash": "4d416496e241a666e7bd6b7a20d7c92a",
     "packages": [
         {
             "name": "admad/cakephp-jwt-auth",
@@ -491,6 +491,60 @@
                 "php mobile detect"
             ],
             "time": "2016-11-11T14:56:25+00:00"
+        },
+        {
+            "name": "neomerx/json-api",
+            "version": "v0.8.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neomerx/json-api.git",
+                "reference": "221a007ab89c7f58128c6c8362612b70950b65c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neomerx/json-api/zipball/221a007ab89c7f58128c6c8362612b70950b65c4",
+                "reference": "221a007ab89c7f58128c6c8362612b70950b65c4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "psr/http-message": "^1.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.4",
+                "monolog/monolog": "^1.18",
+                "phpunit/phpunit": "^4.6 || ^5.0",
+                "scrutinizer/ocular": "^1.3",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Neomerx\\JsonApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "neomerx",
+                    "email": "info@neomerx.com"
+                }
+            ],
+            "description": "Framework agnostic JSON API (jsonapi.org) implementation",
+            "homepage": "https://github.com/neomerx/json-api",
+            "keywords": [
+                "JSON-API",
+                "api",
+                "json",
+                "jsonapi",
+                "jsonapi.org",
+                "neomerx"
+            ],
+            "time": "2017-01-29T13:52:12+00:00"
         },
         {
             "name": "psr/http-message",
