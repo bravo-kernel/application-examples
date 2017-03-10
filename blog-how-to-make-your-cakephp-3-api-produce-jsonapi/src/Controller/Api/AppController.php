@@ -26,11 +26,10 @@ class AppController extends Controller
                 'Crud.Delete'
             ],
             'listeners' => [
-                'Crud.Api',
+                'Crud.JsonApi',
                 'Crud.ApiPagination',
                 'Crud.ApiQueryLog'
             ]
         ]);
     }
 }
-
