@@ -1,0 +1,7 @@
+<h3>Edit existing Cocktail (id = {{model.id}})</h3>
+<form>
+    <div>{{input value=model.name}}</div>
+    <div>{{input value=model.description}}</div>
+</form>
+
+<button class="button alert small" {{action 'saveCocktail' model}}>Save</button>

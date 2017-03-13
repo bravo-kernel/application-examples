@@ -1,0 +1,14 @@
+<h3>Ember showing data fetched from CakePHP API's index action</h3>
+<table>
+  {{#each model as |cocktail|}}
+      <tr>
+          <td>{{cocktail.id}}</td>
+          <td>{{cocktail.name}}</td>
+          <td>{{cocktail.description}}</td>
+          <td>{{cocktail.created}}</td>
+          <td><button class="button" {{action 'deleteCocktail' cocktail}}>Delete</button></td>
+      </tr>
+  {{/each}}
+</table>
+
+{{outlet}}
