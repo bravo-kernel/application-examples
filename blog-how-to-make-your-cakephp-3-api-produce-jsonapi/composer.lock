@@ -365,16 +365,16 @@
         },
         {
             "name": "friendsofcake/crud",
-            "version": "4.4.0",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfCake/crud.git",
-                "reference": "9e11a29256ae4b80a80c9a25e6053593278f5c80"
+                "reference": "b9b42a72f6758fe1a24559fae60e7f9a5ab268cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/9e11a29256ae4b80a80c9a25e6053593278f5c80",
-                "reference": "9e11a29256ae4b80a80c9a25e6053593278f5c80",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/b9b42a72f6758fe1a24559fae60e7f9a5ab268cb",
+                "reference": "b9b42a72f6758fe1a24559fae60e7f9a5ab268cb",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "scaffolding",
                 "update"
             ],
-            "time": "2017-03-08T19:30:08+00:00"
+            "time": "2017-03-26T17:41:39+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -548,24 +548,24 @@
         },
         {
             "name": "ozee31/cakephp-cors",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ozee31/cakephp-cors.git",
-                "reference": "a4ba91833470c86e887a5b2488aa8fb2d2267bc4"
+                "reference": "a245a66a55e0956ee73b1ce4f909fa50d37f29c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ozee31/cakephp-cors/zipball/a4ba91833470c86e887a5b2488aa8fb2d2267bc4",
-                "reference": "a4ba91833470c86e887a5b2488aa8fb2d2267bc4",
+                "url": "https://api.github.com/repos/ozee31/cakephp-cors/zipball/a245a66a55e0956ee73b1ce4f909fa50d37f29c6",
+                "reference": "a245a66a55e0956ee73b1ce4f909fa50d37f29c6",
                 "shasum": ""
             },
             "require": {
                 "cakephp/cakephp": ">=3.3.2 <4.0.0",
-                "php": ">=5.5.9"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": "5.*"
             },
             "type": "cakephp-plugin",
             "autoload": {
@@ -575,7 +575,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "A CakePHP (3.3.x) plugin for activate cors domain in your application",
-            "time": "2017-03-13T07:52:02+00:00"
+            "time": "2017-03-22T13:23:29+00:00"
         },
         {
             "name": "psr/http-message",

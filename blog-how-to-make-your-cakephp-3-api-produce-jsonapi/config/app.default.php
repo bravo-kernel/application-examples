@@ -148,6 +148,15 @@ return [
     ],
 
     /**
+     * Do not use the Cors plugin exception renderer when using
+     * Crud JsonApiListener or JSON API (validation) errors will
+     * not be rendered.
+     */
+    'Cors' => [
+        'exceptionRenderer' => 'Crud\Error\JsonApiExceptionRenderer'
+    ],
+
+    /**
      * Email configuration.
      *
      * You can configure email transports and email delivery profiles here.

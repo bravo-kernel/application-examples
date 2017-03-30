@@ -23,7 +23,7 @@ class AppController extends Controller
                 'Crud.View',
                 'Crud.Add',
                 'Crud.Edit',
-                'Crud.Delete'
+                'Crud.Delete',
             ],
             'listeners' => [
                 'Crud.JsonApi',
