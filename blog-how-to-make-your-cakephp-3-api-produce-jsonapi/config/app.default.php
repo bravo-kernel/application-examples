@@ -153,7 +153,7 @@ return [
      * not be rendered.
      */
     'Cors' => [
-        'exceptionRenderer' => 'Crud\Error\JsonApiExceptionRenderer'
+        'exceptionRenderer' => '\Crud\Error\JsonApiExceptionRenderer'
     ],
 
     /**
