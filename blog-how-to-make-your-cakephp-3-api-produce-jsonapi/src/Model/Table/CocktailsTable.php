@@ -61,11 +61,6 @@ class CocktailsTable extends Table
             ->like('filter', [
                 'before' => true,
                 'after' => true,
-                'fieldMode' => 'OR',
-                'comparison' => 'LIKE',
-                'wildcardAny' => '*',
-                'wildcardOne' => '?',
-                //'field' => $this->aliasField('name')
                 'field' => [$this->aliasField('name'), $this->aliasField('description')]
             ]);
 
