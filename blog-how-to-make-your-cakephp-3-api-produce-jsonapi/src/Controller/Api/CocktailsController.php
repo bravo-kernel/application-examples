@@ -8,7 +8,7 @@ class CocktailsController extends AppController
         'limit' => 5,
         'maxLimit' => 15,
         'sortWhitelist' => [
-            'id', 'name'
+            'name', 'description'
         ]
     ];
 }

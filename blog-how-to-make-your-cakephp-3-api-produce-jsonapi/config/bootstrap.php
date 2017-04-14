@@ -198,3 +198,5 @@ Plugin::load('Crud');
 Plugin::load('ADmad/JwtAuth', []);
 
 Plugin::load('Cors', ['bootstrap' => true, 'routes' => false]);
+
+Plugin::load('Search');

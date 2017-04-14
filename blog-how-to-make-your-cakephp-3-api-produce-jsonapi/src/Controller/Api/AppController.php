@@ -26,6 +26,7 @@ class AppController extends Controller
                 'Crud.Delete',
             ],
             'listeners' => [
+                'Crud.Search',
                 'Crud.JsonApi',
                 'Crud.ApiPagination',
                 'Crud.ApiQueryLog'

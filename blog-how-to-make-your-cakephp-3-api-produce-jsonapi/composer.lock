@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3248929de885a12d71f53b472454c2c0",
+    "content-hash": "42dda03ccd96230f9875c8a5095d4a74",
     "packages": [
         {
             "name": "admad/cakephp-jwt-auth",
@@ -439,6 +439,54 @@
             "time": "2017-03-26T17:41:39+00:00"
         },
         {
+            "name": "friendsofcake/search",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/search.git",
+                "reference": "7eb3725f75870bea6025eef727bd335411dfb9db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/search/zipball/7eb3725f75870bea6025eef727bd335411dfb9db",
+                "reference": "7eb3725f75870bea6025eef727bd335411dfb9db",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "dev-master",
+                "friendsofcake/cakephp-test-utilities": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Search\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Winther",
+                    "homepage": "http://cakephp.nu/",
+                    "role": "Author"
+                }
+            ],
+            "description": "CakePHP Search plugin using PRG pattern",
+            "homepage": "https://github.com/FriendsOfCake/search",
+            "keywords": [
+                "cake3",
+                "cakephp",
+                "cakephp3",
+                "search"
+            ],
+            "time": "2017-03-11T07:43:32+00:00"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "2.8.24",
             "source": {
@@ -548,16 +596,16 @@
         },
         {
             "name": "ozee31/cakephp-cors",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ozee31/cakephp-cors.git",
-                "reference": "a245a66a55e0956ee73b1ce4f909fa50d37f29c6"
+                "reference": "73ee14f77e19e8a42bb26ce5a8fa740f9edfada8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ozee31/cakephp-cors/zipball/a245a66a55e0956ee73b1ce4f909fa50d37f29c6",
-                "reference": "a245a66a55e0956ee73b1ce4f909fa50d37f29c6",
+                "url": "https://api.github.com/repos/ozee31/cakephp-cors/zipball/73ee14f77e19e8a42bb26ce5a8fa740f9edfada8",
+                "reference": "73ee14f77e19e8a42bb26ce5a8fa740f9edfada8",
                 "shasum": ""
             },
             "require": {
@@ -575,7 +623,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "A CakePHP (3.3.x) plugin for activate cors domain in your application",
-            "time": "2017-03-22T13:23:29+00:00"
+            "time": "2017-04-13T13:36:45+00:00"
         },
         {
             "name": "psr/http-message",

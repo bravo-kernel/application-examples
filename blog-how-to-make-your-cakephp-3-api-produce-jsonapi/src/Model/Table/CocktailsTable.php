@@ -6,6 +6,7 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Search\Manager;
 
 /**
  * Cocktails Model
@@ -25,6 +26,8 @@ class CocktailsTable extends Table
         $this->displayField('name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
+
+        $this->addBehavior('Search.Search');
     }
 
     /**
@@ -44,5 +47,28 @@ class CocktailsTable extends Table
             ->notEmpty('description');
 
         return $validator;
+    }
+
+    /**
+     * FriendsOfCake (index) Search
+     *
+     * @return \Search\Manager
+     */
+    public function searchConfiguration()
+    {
+        $search = new Manager($this);
+        $search
+            ->like('filter', [
+                'before' => true,
+                'after' => true,
+                'fieldMode' => 'OR',
+                'comparison' => 'LIKE',
+                'wildcardAny' => '*',
+                'wildcardOne' => '?',
+                //'field' => $this->aliasField('name')
+                'field' => [$this->aliasField('name'), $this->aliasField('description')]
+            ]);
+
+        return $search;
     }
 }
