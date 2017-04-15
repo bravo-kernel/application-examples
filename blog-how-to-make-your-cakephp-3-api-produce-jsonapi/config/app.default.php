@@ -141,11 +141,18 @@ return [
      */
     'Error' => [
         'errorLevel' => E_ALL & ~E_DEPRECATED,
-        'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
+        'exceptionRenderer' => '\Crud\Error\JsonApiExceptionRenderer',
         'skipLog' => [],
         'log' => true,
         'trace' => true,
     ],
+
+    /**
+     * Cors required to make sure headers are added on (validation) errors as well.
+     */
+     'Cors' => [
+         'exceptionRenderer' => '\Cors\Error\AppExceptionRenderer'
+     ],
 
     /**
      * Do not use the Cors plugin exception renderer when using
