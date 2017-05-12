@@ -27,8 +27,8 @@ class AppController extends Controller
             ],
             'listeners' => [
                 'Crud.Search',
-                'Crud.JsonApi',
-                'Crud.ApiPagination',
+                'CrudJsonApi.JsonApi',
+                'CrudJsonApi.Pagination', // Note: Pagination != ApiPagination
                 'Crud.ApiQueryLog'
             ]
         ]);

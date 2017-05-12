@@ -141,7 +141,7 @@ return [
      */
     'Error' => [
         'errorLevel' => E_ALL & ~E_DEPRECATED,
-        'exceptionRenderer' => '\Crud\Error\JsonApiExceptionRenderer',
+        'exceptionRenderer' => '\CrudJsonApi\Error\JsonApiExceptionRenderer',
         'skipLog' => [],
         'log' => true,
         'trace' => true,
@@ -153,15 +153,6 @@ return [
      'Cors' => [
          'exceptionRenderer' => '\Cors\Error\AppExceptionRenderer'
      ],
-
-    /**
-     * Do not use the Cors plugin exception renderer when using
-     * Crud JsonApiListener or JSON API (validation) errors will
-     * not be rendered.
-     */
-    'Cors' => [
-        'exceptionRenderer' => '\Crud\Error\JsonApiExceptionRenderer'
-    ],
 
     /**
      * Email configuration.
